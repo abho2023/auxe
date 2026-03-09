@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | AURA LUXE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-outfit { font-family: 'Outfit', sans-serif; }
+        .bg-charcoal { background-color: #1A1A1A; }
+        .text-gold { color: #D4AF37; }
+        .sharp-edge { border-radius: 0 !important; }
+        .tracking-wide { letter-spacing: 0.2em; }
+        .nav-link { position: relative; transition: all 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0; background-color: #D4AF37; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="bg-charcoal text-white selection:bg-gold selection:text-black">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b border-white/10">
+        <nav class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex-shrink-0">
+                <a href="index.html" class="font-outfit text-2xl font-extrabold tracking-wide uppercase">
+                    Aura <span class="text-gold">Luxe</span>
+                </a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-12 uppercase font-outfit text-sm tracking-wide">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link text-gold">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="pt-48 pb-20 px-6">
+        <div class="max-w-7xl mx-auto border-l-4 border-gold pl-10">
+            <h1 class="font-outfit text-6xl md:text-9xl font-black uppercase tracking-tight">The <span class="text-white/20">Studio</span></h1>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="py-20 px-6 bg-white text-black">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="font-outfit text-4xl mb-10 uppercase tracking-widest font-bold">Philosophy</h2>
+                <p class="text-lg font-light leading-relaxed mb-8">
+                    Founded in 2024, Aura Luxe was born from the idea that grooming is an architectural pursuit. Our space is more than a salon—it is an industrial laboratory where precision is the only currency.
+                </p>
+                <p class="text-lg font-light leading-relaxed">
+                    We've stripped away the fluff and the traditional binaries of the salon world to build a santuary focused solely on excellence. Here, we celebrate the raw, the authentic, and the meticulously crafted.
+                </p>
+            </div>
+            <div class="bg-charcoal aspect-video sharp-edge overflow-hidden border-8 border-gold">
+                <img src="./assets/philosophy-studio.jpg" alt="Industrial Space" class="w-full h-full object-cover grayscale brightness-75 contrast-125">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team / Architects -->
+    <section class="py-32 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-24">
+            <h2 class="font-outfit text- gold text-xl tracking-widest uppercase mb-4">The Architects</h2>
+            <h3 class="font-outfit text-5xl md:text-7xl font-black uppercase">Master Crafters</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            <div class="group text-center">
+                <div class="aspect-[3/4] bg-white/5 border border-white/10 mb-8 sharp-edge relative overflow-hidden">
+                    <img src="./assets/julian-v.jpg" alt="Julian V." class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black p-6">
+                        <span class="font-outfit text-gold uppercase tracking-widest text-xs">Principal Architect</span>
+                    </div>
+                </div>
+                <h4 class="font-outfit text-2xl font-bold uppercase mb-2">Julian V.</h4>
+                <p class="text-concrete/40 text-sm font-light">Hair Sculpting & Color Alchemy</p>
+            </div>
+            <div class="group text-center md:translate-y-12">
+                <div class="aspect-[3/4] bg-white/5 border border-white/10 mb-8 sharp-edge relative overflow-hidden">
+                    <img src="./assets/elena-s.jpg" alt="Elena S." class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black p-6">
+                        <span class="font-outfit text-gold uppercase tracking-widest text-xs">Grooming Lead</span>
+                    </div>
+                </div>
+                <h4 class="font-outfit text-2xl font-bold uppercase mb-2">Elena S.</h4>
+                <p class="text-concrete/40 text-sm font-light">Skin Refinement & Precision Lining</p>
+            </div>
+            <div class="group text-center">
+                <div class="aspect-[3/4] bg-white/5 border border-white/10 mb-8 sharp-edge relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop" alt="Marcus K." class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black p-6">
+                        <span class="font-outfit text-gold uppercase tracking-widest text-xs">Technical Specialist</span>
+                    </div>
+                </div>
+                <h4 class="font-outfit text-2xl font-bold uppercase mb-2">Marcus K.</h4>
+                <p class="text-concrete/40 text-sm font-light">Modern Fades & Geometric Design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-white/10 opacity-80 mt-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-10 md:mb-0">
+                <h4 class="font-outfit text-2xl font-bold uppercase mb-4 tracking-wide">Aura Luxe</h4>
+                <p class="text-concrete/60 font-light text-sm">123 Industrial Dr. Steel City, SC 45678</p>
+                <p class="text-concrete/60 font-light text-sm">Mon - Sat: 10AM - 9PM</p>
+            </div>
+            <div class="flex space-x-10 font-outfit text-xs uppercase tracking-widest">
+                <a href="#" class="hover:text-gold transition-colors">Instagram</a>
+                <a href="#" class="hover:text-gold transition-colors">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

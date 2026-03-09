@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | AURA LUXE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-outfit { font-family: 'Outfit', sans-serif; }
+        .bg-charcoal { background-color: #1A1A1A; }
+        .text-gold { color: #D4AF37; }
+        .sharp-edge { border-radius: 0 !important; }
+        .tracking-wide { letter-spacing: 0.2em; }
+        .nav-link { position: relative; transition: all 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0; background-color: #D4AF37; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .service-list li { border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem 0; }
+        .service-list li:last-child { border-bottom: none; }
+    </style>
+</head>
+<body class="bg-charcoal text-white selection:bg-gold selection:text-black">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b border-white/10">
+        <nav class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex-shrink-0">
+                <a href="index.html" class="font-outfit text-2xl font-extrabold tracking-wide uppercase">
+                    Aura <span class="text-gold">Luxe</span>
+                </a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-12 uppercase font-outfit text-sm tracking-wide">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link text-gold">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="pt-48 pb-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end">
+            <div class="border-l-4 border-gold pl-10 max-w-xl">
+                <h1 class="font-outfit text-6xl md:text-9xl font-black uppercase tracking-tight">The <span class="text-white/20">Menu</span></h1>
+            </div>
+            <p class="font-outfit text-sm uppercase tracking-widest text-concrete/40 md:mb-4">Standard pricing subject to consultation</p>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="py-20 px-6 bg-white text-black">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-32">
+            <!-- Hair -->
+            <div>
+                <h2 class="font-outfit text-5xl font-black uppercase mb-12 border-b-8 border-gold inline-block">Hair</h2>
+                <ul class="service-list font-outfit uppercase tracking-widest">
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Design Cut</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Wash + Sculpt + Finish</span>
+                        </div>
+                        <span class="text-xl">$65</span>
+                    </li>
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Technical Fade</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Machine + Foil Skin Fade</span>
+                        </div>
+                        <span class="text-xl">$50</span>
+                    </li>
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Color Alchemy</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Full Bleach & Tone</span>
+                        </div>
+                        <span class="text-xl">$120+</span>
+                    </li>
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Creative Styling</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Event & Editorial High-Finish</span>
+                        </div>
+                        <span class="text-xl">$80+</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skin & Grooming -->
+            <div>
+                 <h2 class="font-outfit text-5xl font-black uppercase mb-12 border-b-8 border-black inline-block">Grooming</h2>
+                <ul class="service-list font-outfit uppercase tracking-widest">
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Signature Shave</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Hot Towel + Razor Service</span>
+                        </div>
+                        <span class="text-xl">$45</span>
+                    </li>
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Detox Facial</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Charcoal Cleanse + Steam</span>
+                        </div>
+                        <span class="text-xl">$85</span>
+                    </li>
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Beard Blueprint</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Precision Line + Sculpting</span>
+                        </div>
+                        <span class="text-xl">$35</span>
+                    </li>
+                    <li class="flex justify-between items-center group">
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold group-hover:text-gold transition-colors">Concrete Glow</span>
+                            <span class="text-[10px] text-black/40 font-light mt-1 uppercase">Anti-Age Hydration + Polish</span>
+                        </div>
+                        <span class="text-xl">$110</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Callout -->
+    <section class="py-32 bg-charcoal">
+        <div class="max-w-7xl mx-auto px-6 text-center border border-white/10 p-20 sharp-edge">
+             <h3 class="font-outfit text-4xl font-black uppercase mb-6">Inclusivity Policy</h3>
+             <p class="max-w-3xl mx-auto text-lg text-concrete/60 font-light leading-relaxed mb-10">
+                Aura Luxe is a safe and welcoming space for all. Our services are gender-blind—we charge based on the complexity, time, and technique required for your transformation, regardless of gender identity.
+             </p>
+             <a href="contact.html" class="inline-block bg-gold text-black font-outfit px-12 py-5 uppercase tracking-wide transition-all duration-300 sharp-edge font-bold hover:bg-white">
+                Book Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-white/10 opacity-80">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-10 md:mb-0">
+                <h4 class="font-outfit text-2xl font-bold uppercase mb-4 tracking-wide">Aura Luxe</h4>
+                <p class="text-concrete/60 font-light text-sm">123 Industrial Dr. Steel City, SC 45678</p>
+                <p class="text-concrete/60 font-light text-sm">Mon - Sat: 10AM - 9PM</p>
+            </div>
+            <div class="flex space-x-10 font-outfit text-xs uppercase tracking-widest">
+                <a href="#" class="hover:text-gold transition-colors">Instagram</a>
+                <a href="#" class="hover:text-gold transition-colors">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
